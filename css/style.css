@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* start the common css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  display: inline-block;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* end the common css */
+
+:root {
+  --primary: #209fe4;
+  --secondary: #ded300;
+  --secondary-2: #fb9a1b;
+  --text-color: #cecfd3;
+  --white: #ffffff;
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  background: var(--white) !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.bdgol-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bdgol-header .nav-item .nav-link {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 500;
+}
+.right-side-btn {
+  display: flex;
+  gap: 10px;
+}
+.right-side-btn .primary-btn {
+  border: 1px solid var(--primary);
+  padding: 10px 16px;
+  border-radius: 30px;
+  color: var(--white);
+  font-weight: 600;
+  background: var(--primary);
+  transition: all linear 0.3s;
+}
+.right-side-btn .primary-btn:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+.right-side-btn .icon-btn i {
+  margin-right: 6px;
+}
+.right-side-btn .primary-btn-outline {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: var(--white);
+  border-radius: 30px;
+  padding: 10px 16px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+}
+.right-side-btn .primary-btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* start the responisve css */
+@media screen and (max-width: 991px) {
+  .bdgol-header {
+    display: block;
+  }
+  .right-side-btn button {
+    display: block;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  .right-side-btn {
+    display: block;
+  }
+}
+
+/* end the responisve css */
