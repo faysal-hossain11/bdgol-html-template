@@ -424,7 +424,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   margin-top: 40px;
 }
 
-.paginationBtn-wrap .pagination-btn {
+.pagination-btn {
   border: 1px solid var(--primary);
   background: var(--white);
   width: 45px;
@@ -437,10 +437,10 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   transform: rotate(45deg);
 }
 
-.paginationBtn-wrap .pagination-btn i {
+.pagination-btn i {
   transform: rotate(-43deg);
 }
-.paginationBtn-wrap .pagination-btn:hover {
+.pagination-btn:hover {
   background: var(--primary);
   color: var(--white);
 }
@@ -682,6 +682,9 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 /* end the home  page css */
 
 /* start the recent-join card  section css*/
+.recent-country .slick-slide {
+  padding: 6px;
+}
 .recent-join {
   padding: 50px 0px;
 }
@@ -756,8 +759,12 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 /* end the recent-join card  section css*/
 
 /* start the fetured section css */
+.featured-section .slick-slide {
+  padding: 0px 8px;
+}
 .featured-section {
   padding: 50px 0px;
+  position: relative;
 }
 
 .fetured-card {
@@ -874,6 +881,9 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 /* end the fetured section css */
 
 /* start the news section css */
+.news-section .slick-slide {
+  padding: 0px 8px;
+}
 .news-section {
   padding: 50px 0px;
 }
@@ -949,6 +959,9 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 /* end the news section css */
 
 /* start the testimonials section css */
+.testimonials .slick-slide {
+  margin: 0px 50px;
+}
 .testimonials {
   padding: 50px 0px;
 }
@@ -978,11 +991,11 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   transform: none;
 }
 .testimonial-img.slick-slide.slick-current.slick-active.slick-center {
-  transform: scale(1.1);
+  transform: scale(1.3);
   position: relative;
   z-index: 999999 !important;
 }
-.slick-slider .slick-track,
+.testimonials-wrap .slick-slider .slick-track,
 .slick-slider .slick-list {
   padding: 46px 0px;
 }
@@ -993,6 +1006,18 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 /* start the choose us cestion css */
 .choose-us-card-wrap{
   display: flex;
+  position: relative;
+}
+.pagination-btn.pagination-left.slick-arrow {
+  position: absolute;
+  left: 46%;
+  bottom: 22px;
+  z-index: 9 !important;
+}
+.pagination-btn.pagination-right.slick-arrow {
+  position: absolute;
+  right: 45%;
+  bottom: 22px;
 }
 .choose-us-card{
   width: 100%;
