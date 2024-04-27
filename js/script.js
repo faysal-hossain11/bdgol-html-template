@@ -27,3 +27,12 @@ $('.testimonials-wrap').slick({
         }
     ]
 });
+
+
+
+// start the modal js code
+$(document).on("click","#cust_btn",function(){
+  
+    $("#myModal").modal("toggle");
+    
+  })
