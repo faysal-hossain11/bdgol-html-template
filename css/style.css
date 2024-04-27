@@ -33,7 +33,14 @@ body {
   --black: #000000;
 }
 
-
+.modal-content {
+  top: 200px !important;
+}
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
 
 nav.navbar.navbar-expand-lg.bg-body-tertiary {
   background: var(--white) !important;
@@ -493,7 +500,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 }
 .videoIcon {
   position: absolute;
-  top: 130px;
+  top: 90px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -997,7 +1004,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 }
 .testimonials-wrap .slick-slider .slick-track,
 .slick-slider .slick-list {
-  padding: 46px 0px;
+  padding: 46px 0px !important;
 }
 
 /* end the testimonials section css */
@@ -1011,13 +1018,13 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 .pagination-btn.pagination-left.slick-arrow {
   position: absolute;
   left: 46%;
-  bottom: 22px;
+  bottom: -20px;
   z-index: 9 !important;
 }
 .pagination-btn.pagination-right.slick-arrow {
   position: absolute;
   right: 45%;
-  bottom: 22px;
+  bottom: -20px;
 }
 .choose-us-card{
   width: 100%;
@@ -1092,8 +1099,68 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
 /* end the choose us cestion css */
 
+.testimonials .slick-track{
+    padding: 51px 0px !important;
+}
+.recent-join .slick-slide {
+  padding: 0px 5px;
+}
+
+.recent-join .slick-dots li button {
+  color: var(--white);
+  background: #209fe45f;
+  border-radius: 50%;
+}
+.recent-join .slick-dots li.slick-active button{
+  background: var(--primary);
+}
+
+.recent-join .slick-dots li button:before {
+  color: transparent;
+}
+.recent-join .slick-dots li.slick-active button:before{
+  color: transparent;
+}
+.recent-join .slick-dots {
+  bottom: -5px;
+}
 
 
+.banner-right .pagination-btn.pagination-left.slick-arrow {
+  position: absolute;
+  left: -1%;
+  bottom: 43%;
+  z-index: 9 !important;
+}
+.banner-right .pagination-btn.pagination-left.slick-arrow:hover {
+  background: var(--secondary-2);
+  border: var(--white);
+}
+.banner-right .pagination-btn.pagination-right.slick-arrow {
+  position: absolute;
+  right: -4%;
+  bottom: 43%;
+  z-index: 9 !important;
+}
+.banner-right .pagination-btn.pagination-right.slick-arrow:hover {
+  background: var(--secondary-2);
+  border: var(--white);
+}
+
+.home-banner .slick-slider .slick-track, .slick-slider .slick-list  {
+  /* padding: 0px !important; */
+}
+
+.category-similar .slick-slide {
+  padding: 0px 8px;
+}
+
+.video-wrapper-area .videoIcon {
+  position: absolute;
+  top: 116px;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 
 
@@ -1117,8 +1184,6 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
     max-width: 1400px;
   }
 }
-
-
 
 @media screen and (max-width: 991px) {
   .bdgol-header {
