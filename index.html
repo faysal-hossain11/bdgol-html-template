@@ -68,8 +68,8 @@
             <button class="primary-btn icon-btn">
               <i class="fa-solid fa-plus"></i>Add Company
             </button>
-            <button class="primary-btn-outline">Login In</button>
-            <button class="primary-btn-outline">Sign Up</button>
+            <button class="primary-btn-outline" id="cust_btn3">Login In</button>
+            <button class="primary-btn-outline" id="cust_btn2">Sign Up</button>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <div class="banner-left">
+            <div class="banner-left mt-5">
               <div class="bannerImg">
                 <img src="/img/banner-log.png" alt="" />
               </div>
@@ -933,29 +933,124 @@
     </footer>
     <!-- end the  footer section -->
 
-    <!-- modal code -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <iframe
+            width="600"
+            height="340"
+            src="https://www.youtube.com/embed/a1hEY3Ii70I"
+            title="This is not just an office video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
-    <div class="container">
-      <!-- <button
-        type="button"
-        class="btn btn-info btn-lg"
-        data-toggle="modal"
-        data-target="#myModal"
-      >
-        Open Modal
-      </button> -->
-
-
-      <!-- <button id="cust_btn" type="button" class="btn btn-info btn-lg">
-        Click func
-      </button> -->
-
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-          <!-- Modal content-->
-          <div class="modal-content">
-            <iframe width="600" height="340" src="https://www.youtube.com/embed/a1hEY3Ii70I" title="This is not just an office video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="modal fade" id="myModalSignup" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="p-4">
+            <h3 class="login-signup-text">Sign Up</h3>
+            <form action="">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="first name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="last name"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="enter your email"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="email"
+                  placeholder="enter your password"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+              </div>
+              <div class="mb-3 text-center">
+                <button class="login-signup-btn">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModalLogin" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="p-4">
+            <h3 class="login-signup-text">Login</h3>
+            <form action="">
+              
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="enter your email"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="email"
+                  placeholder="enter your password"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3 text-center">
+                <button class="login-signup-btn">Login</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -35,6 +35,16 @@ $(document).on("click", "#cust_btn", function () {
     $("#myModal").modal("toggle");
 });
 
+$(document).on("click", "#cust_btn2", function () {
+    $("#myModalSignup").modal("toggle");
+});
+$(document).on("click", "#cust_btn3", function () {
+    $("#myModalLogin").modal("toggle");
+});
+
+
+
+
 //choose-slider
 $('.choose-slider').slick({
     infinite: true,
