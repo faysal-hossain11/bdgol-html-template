@@ -3,17 +3,26 @@ $('.testimonials-wrap').slick({
     // centerPadding: '60px',
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
 
     responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        },
         {
             breakpoint: 768,
             settings: {
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 2
+                slidesToShow: 1
             }
         },
         {
@@ -96,7 +105,7 @@ $('.recent-country-slider').slick({
 
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1300,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -105,14 +114,23 @@ $('.recent-country-slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 400,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -134,7 +152,7 @@ $('.featured-card-slider').slick({
 
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -143,7 +161,7 @@ $('.featured-card-slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
@@ -172,7 +190,7 @@ $('.news-section-slider').slick({
 
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -181,9 +199,16 @@ $('.news-section-slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },
@@ -240,6 +265,7 @@ $('.new-country-slider').slick({
 $('.category-similar-slider').slick({
     infinite: true,
     speed: 300,
+    dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     centerPadding: 40,
@@ -247,6 +273,15 @@ $('.category-similar-slider').slick({
     prevArrow: '<button class="pagination-btn pagination-left"><i class="fa-solid fa-angle-left"></i></button>',
     nextArrow: '<button class="pagination-btn pagination-right"><i class="fa-solid fa-angle-right"></i></button>',
     responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
         {
             breakpoint: 1024,
             settings: {
@@ -257,9 +292,16 @@ $('.category-similar-slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
                 slidesToScroll: 1
             }
         },

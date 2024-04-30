@@ -21,6 +21,7 @@ ul li a {
 }
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 /* end the common css */
 
@@ -500,7 +501,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 }
 .videoIcon {
   position: absolute;
-  top: 90px;
+  top: 131px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -702,6 +703,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   display: flex;
   gap: 15px;
   transition: all linear 0.3s;
+  justify-content: space-between;
 }
 .recent-join-card:hover .recent-join-img img {
   transform: scale(1.2);
@@ -723,7 +725,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   transition: all linear 0.3s;
 }
 .recent-join-text {
-  text-align: left;
+  text-align: right;
 }
 .recent-join-text .heading {
   font-size: 20px;
@@ -739,6 +741,8 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   gap: 6px;
   align-items: center;
   margin-bottom: 14px;
+  text-align: right;
+  display: block;
 }
 .recent-join-text .recent-details-link {
   padding: 10px 16px;
@@ -966,7 +970,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
 /* start the testimonials section css */
 .testimonials .slick-slide {
-  margin: 0px 50px;
+  /* margin: 0px 50px; */
 }
 .testimonials {
   padding: 50px 0px;
@@ -1479,6 +1483,9 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 .gallery-img-inner-left {
   max-width: 30%;
 }
+.gallery-img-inner-left img {
+  width: 100%;
+}
 .gallery-img-inner-right {
   max-width: 70%;
 }
@@ -1486,8 +1493,15 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 .gallery-img1 {
   height: 400px;
 }
+.gallery-img1 img {
+  width: 100%;
+  height: 400px;
+}
 .gallery-img2 {
   height: 260px;
+}
+.gallery-img3 {
+  height: 660px;
 }
 .gallery-img3 {
   height: 660px;
@@ -1525,19 +1539,19 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   font-weight: 700;
   color: var(--black);
 }
-.experience-reating{
+.experience-reating {
   display: flex;
   gap: 5px;
 }
-.experience-reating i{
+.experience-reating i {
   color: var(--secondary-2);
   font-size: 30px;
 }
 
-.experience-section{
+.experience-section {
   padding: 50px 0px;
 }
-.portfolio-sililar-category{
+.portfolio-sililar-category {
   padding-top: 50px;
 }
 /* end the portfolio page css  */
@@ -1553,9 +1567,58 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   .container {
     max-width: 1400px;
   }
+  .pagination-btn.pagination-left.slick-arrow {
+    left: 45%;
+  }
+  .pagination-btn.pagination-right.slick-arrow {
+    right: 44%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .choose-card-content .heading {
+    font-size: 24px;
+  }
+  .choose-card-content .sub-heading {
+    font-size: 18px;
+  }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1240px) {
+  .pagination-btn.pagination-left.slick-arrow {
+    left: 44%;
+  }
+  .pagination-btn.pagination-right.slick-arrow {
+    right: 43%;
+  }
+  .testimonials .videoIcon {
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .choose-us-card-wrap {
+    flex-wrap: wrap;
+  }
+  .testimonials .videoIcon {
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .pagination-btn.pagination-left.slick-arrow {
+    left: 42%;
+  }
+  .pagination-btn.pagination-right.slick-arrow {
+    right: 41%;
+  }
   .bdgol-header {
     display: block;
   }
@@ -1567,6 +1630,143 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   .right-side-btn {
     display: block;
   }
+  .gallery-img-wrapper {
+    display: block !important;
+  }
+  .gallery-img-left {
+    max-width: 100%;
+  }
+  .gallery-img-right {
+    max-width: 100%;
+    display: flex;
+  }
+  .video-map .banner-heading {
+    margin-top: 30px;
+  }
+  .choose-us-card-wrap {
+    display: block;
+    position: relative;
+  }
+  .choose-card-content .heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featued-mid-content .heading {
+    font-size: 24px;
+  }
+  .featued-mid-content .sub-heading {
+    font-size: 22px;
+  }
+  .featured-bottom-content .heading {
+    font-size: 24px;
+  }
+  .section-heading .heading {
+    font-size: 32px;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+  .pagination-btn.pagination-left.slick-arrow {
+    left: 40%;
+  }
+  .pagination-btn.pagination-right.slick-arrow {
+    right: 39%;
+  }
+  .gallery-img-right {
+    display: block;
+  }
+  .gallery-img-inner-left {
+    max-width: 100%;
+  }
+  .gallery-img-inner-right {
+    max-width: 100%;
+  }
+  .portfolio-card-wrap .heading {
+    font-size: 33px;
+  }
+  .banner-left .banner-heading {
+    font-size: 32px;
+  }
+  .footer-top {
+    max-width: 98%;
+    padding: 19px 20px 30px;
+  }
+  .footer-top .text {
+    font-size: 17px;
+  }
+  .testimonials .videoIcon {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pagination-btn.pagination-left.slick-arrow {
+    left: 37%;
+  }
+  .pagination-btn.pagination-right.slick-arrow {
+    right: 36%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pagination-btn.pagination-left.slick-arrow {
+    left: 35%;
+  }
+  .pagination-btn.pagination-right.slick-arrow {
+    right: 34%;
+  }
+  .category-banner .bannr-text {
+    font-size: 25px;
+  }
+  .portfolio-card-wrap .heading {
+    font-size: 28px;
+  }
+  .banner-left .banner-heading {
+    font-size: 28px;
+  }
+  .experience-reating-wrap {
+    display: block;
+    text-align: center;
+  }
+  .experience-reating {
+    display: flex;
+    justify-content: center;
+  }
+  .favorites-bag a {
+    margin-bottom: 10px;
+  }
+  .gallery-section .heading {
+    font-size: 28px;
+  }
+  .section-heading .heading {
+    font-size: 28px;
+  }
+  .content-wrap .left-heading .heading {
+    font-size: 18px;
+  }
+  .category-inner-content .category-items {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pagination-btn.pagination-left.slick-arrow {
+    left: 33%;
+  }
+  .pagination-btn.pagination-right.slick-arrow {
+    right: 30%;
+  }
+  .testimonials .videoIcon {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%);
+}
 }
 
 /* end the responisve css */
